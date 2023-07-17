@@ -9,7 +9,7 @@ public class JavaPalindrome {
 
         // dichiaro le variabili
         String userWord;
-        boolean isWordPalindrome = false;
+        boolean isWordPalindrome = true;
 
         // dichiaro lo scanner
 
@@ -19,10 +19,10 @@ public class JavaPalindrome {
         System.out.println("Inserisci una parola: ");
         userWord = scan.nextLine();
         // inizializzo un ciclo for per controllare gli indici dei caratteri
-        for (int i = 0; i < userWord.length() /2 ; i++) {
+        for (int i = 0; i < userWord.length(); i++) {
             // se la parola scelta, controllando gli indici dei caratteri, risulta palindorma, il valore boolean risulterà true
-            if (userWord.charAt(i) == userWord.charAt(userWord.length()-1 - i)){
-                isWordPalindrome = true;
+            if (userWord.charAt(i) != userWord.charAt(userWord.length()-1 - i)){
+                isWordPalindrome = false;
                 break;
 
             }
