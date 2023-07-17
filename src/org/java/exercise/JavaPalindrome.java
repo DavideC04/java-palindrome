@@ -27,11 +27,15 @@ public class JavaPalindrome {
 
             }
         }
-
+        // se valore boolean è true, la parola è palindroma
         if (isWordPalindrome){
-            System.out.println("La parola scelta è polindroma.");
+            System.out.println("La parola scelta è palindroma.");
         } else {
-            System.out.println("La parola scelta non è polindroma.");
+            // altrimenti la parola non è palindroma.
+            System.out.println("La parola scelta non è palindroma.");
         }
+
+        scan.close();
     }
+
 }
